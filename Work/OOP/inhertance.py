@@ -1,12 +1,12 @@
 class animal:
     #Python supports multiple inheritance directly.
-
+    name = 'any name'
     def speak(self):
         return "I am an animal"
     
 class dog(animal):
-    
     def bark(self):
+        print(self.name)   #accessing the parent class variable
         return "I am a dog"
     
 class cat(animal):

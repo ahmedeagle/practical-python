@@ -1,0 +1,15 @@
+import fileparse
+import stock
+
+# Open the file and parse the CSV
+with open("Work/Data/portfolio.csv") as lines:
+    portdicts = fileparse.parse_csv(
+        lines,
+        select=["name", "shares", "price"],  # Select specific columns
+        types=[str, int, float],  # Correct types
+    )
+
+# Create Stock objects and calculate total cost
+portfolio = [stock.Stock(d["name"], d["shares"], d["price"]) for d in portdicts]
+total_cost = sum([s.cost() for s in portfolio])
+print(f"Total cost: {total_cost}")
