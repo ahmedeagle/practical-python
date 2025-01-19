@@ -1,0 +1,31 @@
+How to Create and Use a Python Virtual Environment?
+
+Create a Virtual Environment:
+
+python -m venv myenv
+myenv is the name of the virtual environment folder.
+
+Activate the Virtual Environment:
+
+On Windows:
+myenv\Scripts\activate
+
+On Mac/Linux:
+source myenv/bin/activate
+
+Install Packages Inside the Virtual Environment:
+pip install package_name
+
+Deactivate the Virtual Environment:
+deactivate
+
+Delete a Virtual Environment:
+
+Simply delete the myenv folder:
+rm -rf myenv
+
+Common Use Cases
+
+Working on multiple projects with conflicting dependencies.
+Sharing the exact development environment with others (using requirements.txt).
+Testing libraries or tools without affecting the global Python setup.

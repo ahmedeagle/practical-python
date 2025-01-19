@@ -1,0 +1,47 @@
+Install a package:
+
+pip install package_name
+Install a specific version:
+
+pip install package_name==version
+Install packages from a requirements file:
+
+pip install -r requirements.txt
+Uninstallation Commands
+Uninstall a package:
+
+pip uninstall package_name
+Listing and Searching
+List installed packages:
+bash
+Copy
+Edit
+pip list
+Show details of a package:
+
+pip show package_name
+Search for a package:
+
+pip search package_name
+Upgrading and Downgrading
+Upgrade a package:
+
+
+pip install --upgrade package_name
+Downgrade a package:
+
+pip install package_name==specific_version
+Exporting Requirements
+Freeze installed packages to a file:
+
+pip freeze > requirements.txt
+Other Useful Commands
+Check for outdated packages:
+
+pip list --outdated
+Upgrade pip itself:
+
+pip install --upgrade pip
+Check pip version:
+
+pip --version

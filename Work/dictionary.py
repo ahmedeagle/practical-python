@@ -22,7 +22,7 @@ print(d.values())  # Get values
 print(d.items())  # Get key-value pairs
 
 
-#Dictionary Comprehension:
+#Dictionary Comprehension from two lists:
 keys = ["a", "b", "c"]
 values = [1, 2, 3]
 my_dict = {key: value for key, value in zip(keys, values)}
